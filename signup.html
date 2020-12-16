@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Love Running</title>
+	<link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+	<link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <h2 id="logo">Love Running</h2>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="signup.html" class="active">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form-section clear">
+      <form class="signup-form" method="POST" action="https://formdump.codeinstitute.net/">
+        <h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></h2>
+        <label for="fname">First Name</label>
+        <input id="fname" class="text-input" type="text" name="first_name" required>
+        <label for="lname">Last Name</label>
+        <input id="lname" class="text-input" type="text" name="last_name" required>
+        <label for="email">Email Address</label>
+        <input id="email" class="text-input" type="email" name="email_address" required>
+        
+        <label for="road">Road</label>
+        <input id="road" type="radio" name="running_preference" value="road" required>
+        <label for="trail">Trail</label>
+        <input id="trail" type="radio" name="running_preference" value="trail">       
+        <label for="both">Both</label>
+        <input id="both" type="radio" name="running_preference" value="both">       
+        
+        <input type="submit" class="join-button" value="Let's Run!">
+      </form>
+    </main>
+
+    <footer class="clear">
+      <ul>
+        <li><a href="https://www.facebook.com"  target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://www.twitter.com"   target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://www.youtube.com"   target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)"><i class="fab fa-youtube-square"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </footer>
+  
+</body>
+</html>

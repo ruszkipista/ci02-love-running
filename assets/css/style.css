@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Lato:wght@300');
+*{margin:0;padding:0;border:0;}
+:root{
+  --line-height-header: 75px;
+  --letter-spacing:    0.2rem;
+  --font-color-header: #555;
+  --font-color-nav:    #777;
+  --hero-img-height:    600px;
+  --font-family-header: "Oswald", Helvetica, sans-serif;
+}
+body{ 
+  font-family: "Lato", Helvetica, sans-serif;
+  color:var(--font-color-nav);
+}
+
+h2{
+  font-family: var(--font-family-header);
+  font-size: 280%;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  color: var(--font-color-header);
+}
+h3{
+  font-family: var(--font-family-header);
+  font-size: 150%;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
+#logo{
+  float:left;
+  text-decoration: none;
+  margin-left:2rem;
+}
+
+#menu{
+  float:right;
+  line-height: var(--line-height-header);
+  font-size: 110%;
+  list-style-type: none;
+  letter-spacing: var(--letter-spacing);
+}
+#menu li{
+  display:inline-block;
+  margin-right: 2rem;
+}
+#menu a{
+  text-decoration: none;
+  color: inherit;
+}
+#menu a:hover, .active{
+  border-bottom: 1px solid var(--font-color-nav);
+}
+#hero-image{
+  height: var(--hero-img-height);
+  width: 100%;
+  background: url("../img/main-image.png") no-repeat center center;
+  background-position: center center;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+#hero-outer{
+  height: var(--hero-img-height);
+  clear: both;
+  overflow: hidden;
+  position:relative;
+}
+@keyframes hero-zoom{
+  from{transform:scale(1.1)}
+  to  {transform:scale(1.0)}
+}
+#cover-text{
+  position: absolute;
+  color:white;
+  background-color: rgba(241, 109, 107, 0.7);
+  width: 14rem;
+  right:15%;
+  bottom: 10%;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family:    var(--font-family-header);
+  letter-spacing: var(--letter-spacing);
+}
+#cover-text > h2{
+  font-size: 140%;
+  color: inherit;
+}
+#club-ethos{
+  height: var(--hero-img-height);
+}
+#club-ethos > h2{ 
+  margin: 2rem 0;
+  text-align: center;
+}
+hr{
+  border-top: 1px solid var(--font-color-header);
+  margin: 0.3rem 0;
+}
+#left-about-column{
+  width:33%;
+  padding-top:2rem;
+  float:left;
+}
+.left-about{
+  width:50%;
+  padding-bottom:2rem;
+  float:right;
+  clear: both;
+  text-align: left;
+}
+#right-about-column{
+  width:33%;
+  padding-top:2rem;
+  float:right;
+}
+.right-about{
+  width:50%;
+  padding-bottom:2rem;
+  float:left;
+  clear: both;
+  text-align: right;
+}
+#center-about{
+  width:30%;
+  height:0;
+  padding-bottom:30%;
+  margin:0 auto;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+#circle-dummy{
+  width:5%;
+  height:0;
+  padding-bottom:5%;
+  /* margin:0 auto; */
+}
+#circle-cover-bg{
+  width:90%;
+  height:0;
+  padding-bottom:90%;
+  margin:0 auto;
+  border-radius: 50%;
+  background: url("../img/circular-image.png") no-repeat center center / cover;
+}
+.clear{
+    clear:both;
+}
+#meetings{
+  text-align:center;
+  background: url("../img/dublin-city.png") no-repeat center center / cover;
+  overflow: hidden;
+}
+#meetings > article{
+  float: left;
+  width:19%;
+  height: 250px;
+  padding-top: 30px;
+  margin:0 0.5%;
+  color:#fafafa;
+  background-color:rgba(0,0,0,.6);
+}
+#meetings > article > h2{
+    font-size: 180%;
+    color:inherit;
+}
+#meetings > article > h3{
+  font-size: 140%;
+  text-transform: none;
+}
+footer > ul{
+    text-align: center;
+    height: 4rem;
+    margin: 4rem 0 0 0;
+}
+footer > ul > li {
+    display: inline;
+    font-size: 160%;
+    padding: 5%;
+}
+#photos{
+    line-height:0;
+    column-count: 3;
+    column-gap: 0;
+}
+#photos > img{
+    width:100%;
+}
+
+/* form */
+
+.form-section {
+  clear: left;
+  background: url("../img/formbg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+}
+
+.signup-form {
+background-color: rgba(60,60,60,0.6);
+color: #fff;
+position: absolute;
+left: 10%;
+max-width:400px;
+/* height:300px; */
+margin-top: 150px;
+padding:30px;
+}
+.signup-form > h2{
+font-size: 120%;
+color: #fafafa;
+margin-bottom: 20px;
+}
+.text-input{
+background: transparent;
+color: #fafafa;
+width: 100%;
+height: 25px;
+margin: 5px 0 10px;
+border: 1px solid #fafafa;
+border-radius: 2px;
+}
+.text-input:hover{
+border-color: #f16c6b;
+}
+.join-button{
+display:block;
+margin-top:20px;
+border-radius:2px;
+padding: 15px 32px 15px 32px;
+text-align: center;
+font-size: 100%;
+background-color: #f16c6b;
+color: #fafafa;
+}
+.join-button:hover{
+color: #f16c6b;
+background-color: #fafafa;
+}
+/*end form*/
+
+@media screen and (max-width: 1200px) {
+  #club-ethos{ 
+    width:70%;
+    height: 1000px;
+    margin:0 auto;
+    padding:0;
+  }
+  #club-ethos > h2{ 
+    padding:10px 0;
+    margin:0;
+    font-size: 200%;
+  }
+  #left-about-column, #right-about-column{
+    width:100%;
+    float:left;
+    padding:0;
+  }
+  #center-about{
+    clear:both;
+    width:50%;
+    padding-bottom:50%;
+  }
+  hr { display: none;}
+  #meetings > article{
+    clear:both;
+    width:100%;
+    height:200px;
+    margin: 0 0 5px;
+  }
+}
+@media screen and (max-width: 934px) {
+  #menu{
+    float:left;
+    clear:left;
+    margin-left:30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+  #club-ethos{ 
+    width:90%;
+    height: 900px;
+  }
+  .left-about, .right-about{
+    width:100%;
+    float: left;
+    text-align:center;
+  }
+  #photos{
+    column-count:2;
+  }
+}
+@media screen and (max-width: 480px) {
+  #photos{  column-count: 1;}
+}
